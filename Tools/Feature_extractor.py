@@ -88,6 +88,5 @@ if __name__ == '__main__':
             all_features.append(fea_vec.tolist())
 
         obj = {"features": all_features}
-        # cur_url = os.path.join(cur, "ResNet18_feature.json")
-        json.dump(obj, open("../json_file/ResNet18_feature.json", "w"))
+        cur_url = os.path.join(cur, "ResNet18_feature.json")
         print("%s has finished ..."%(x))
