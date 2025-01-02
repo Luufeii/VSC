@@ -71,7 +71,7 @@ if __name__ == '__main__':
         cur_class_list = os.listdir(cur)  # 这是该类别下的每个图片的文件名组成的列表
 
         all_features=[]
-        for image_id in cur_class_list:  #### Load each image of each class
+        for image_id in cur_class_list:  # Load each image of each class
 
             image_fn = os.path.join(cur, image_id)
             image = transform(image_fn)  # 加载图片
@@ -88,6 +88,6 @@ if __name__ == '__main__':
             all_features.append(fea_vec.tolist())
 
         obj = {"features": all_features}
-        cur_url = os.path.join(cur, "ResNet18_feature.json")
-        json.dump(obj, open(cur_url, "w"))
+        # cur_url = os.path.join(cur, "ResNet18_feature.json")
+        json.dump(obj, open("../json_file/ResNet18_feature.json", "w"))
         print("%s has finished ..."%(x))
