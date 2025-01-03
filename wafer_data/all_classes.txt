@@ -1,38 +1,38 @@
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
+1 Center
+2 Donut
+3 Edge_loc
+4 Loc
+5 Edge_ring
+6 Scratch
+7 Random
+8 Nearfull
+9 Normal
+10 C+EL
+11 C+ER
+12 C+L
+13 C+S
+14 D+EL
+15 D+ER
+16 D+L
+17 D+S
+18 EL+L
+19 EL+S
+20 ER+L
+21 ER+S
+22 L+S
+23 C+EL+L
+24 C+EL+S
+25 C+ER+L
+26 C+ER+S
+27 C+L+S
+28 D+EL+L
+29 D+EL+S
+30 D+ER+L
+31 D+ER+S
+32 D+L+S
+33 EL+L+S
+34 ER+L+S
+35 C+EL+L+S
+36 C+ER+L+S
+37 D+EL+L+S
+38 D+ER+L+S

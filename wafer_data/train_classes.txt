@@ -1,0 +1,9 @@
+Center
+Donut
+Edge_loc
+Loc
+Edge_ring
+Scratch
+Random
+Nearfull
+Normal
