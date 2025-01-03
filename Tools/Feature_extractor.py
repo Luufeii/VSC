@@ -56,7 +56,7 @@ if __name__ == '__main__':
     x = ResNet.fc.in_features
     if opts.pretrain_model!="":
         ResNet.fc = nn.Linear(x, 9)
-        ResNet.load_state_dict(torch.load(opts.pretrain_model)) ##"/home/ziyu/DNN_RC/Tools/CUB_FT_SS_101_22.pkl"
+        ResNet.load_state_dict(torch.load(opts.pretrain_model))  # "/home/ziyu/DNN_RC/Tools/CUB_FT_SS_101_22.pkl"
     ResNet = nn.Sequential(*list(ResNet.children())[:-1])  # 去掉了全连接层
     ResNet = ResNet.to(device)
     ResNet.eval()
@@ -89,4 +89,7 @@ if __name__ == '__main__':
 
         obj = {"features": all_features}
         cur_url = os.path.join(cur, "ResNet18_feature.json")
+        if not os.path.exists(cur_url):
+            os.makedirs(cur_url)
+        json.dump(obj, open(cur_url, "w"))
         print("%s has finished ..."%(x))

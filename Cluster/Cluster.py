@@ -35,7 +35,10 @@ def KM(features, opts):
     obj["VC"] = clf.cluster_centers_.tolist()
 
     print('Start writing ...')
-    json.dump(obj, open("../json_file/Cluster_VC_ResNet.json", "w"))
+    saved_url = "../json_file/Cluster_VC_ResNet.json"
+    if not os.path.exists(saved_url):
+        os.makedirs(saved_url)
+    json.dump(obj, open(saved_url, "w"))
     print("Finish writing ...")
 
 
