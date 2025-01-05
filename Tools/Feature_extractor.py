@@ -89,7 +89,8 @@ if __name__ == '__main__':
 
         obj = {"features": all_features}
         cur_url = os.path.join(cur, "ResNet18_feature.json")
-        if not os.path.exists(cur_url):
-            os.makedirs(cur_url)
-        json.dump(obj, open(cur_url, "w"))
+        # if not os.path.exists(cur_url):
+            # os.makedirs(cur_url) # 这创建的是文件夹
+            # os.mknod(cur_url)
+        json.dump(obj, open(cur_url, "w"))  # 如果cur_url文件不存在，这里会自动创建文件
         print("%s has finished ..."%(x))

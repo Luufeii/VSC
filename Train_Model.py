@@ -199,7 +199,7 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(1)
 
     parser = argparse.ArgumentParser(description="Training parameters setting")
-    parser.add_argument('--data_path', type=str, default="wafer_data/train")
+    parser.add_argument('--data_path', type=str, default="wafer_data/imgs/train")
     parser.add_argument('--method', type=str, default='VCL', help="VCL|CDVSc|BMVSc|WDVSc")
     parser.add_argument('--GPU', type=str, default="0")
     # parser.add_argument('--dataset', type=str, default="AwA1|AwA2|CUB|SUN|SUN10")
@@ -364,7 +364,7 @@ if __name__ == '__main__':
 
     # pos+=1
     cur = os.getcwd()
-    file = os.path.join(args.save_dir, file)
+    file = os.path.join(args.save_dir, args.method, file)
     with open(file, "w") as f:
         for i in range(m):
             x = i + n - m  # 只需要未见类的预测视觉中心

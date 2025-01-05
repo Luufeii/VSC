@@ -36,9 +36,9 @@ def KM(features, opts):
 
     print('Start writing ...')
     saved_url = "../json_file/Cluster_VC_ResNet.json"
-    if not os.path.exists(saved_url):
-        os.makedirs(saved_url)
-    json.dump(obj, open(saved_url, "w"))
+    # if not os.path.exists(saved_url):
+        # os.makedirs(saved_url)
+    json.dump(obj, open(saved_url, "w"))  # 如果文件不存在，这里会自动创建文件
     print("Finish writing ...")
 
 

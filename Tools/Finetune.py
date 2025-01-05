@@ -49,7 +49,7 @@ class ImageFolder(Dataset):  # 这个类实例化之后就是一个Dataset对象
         # img=img.resize((224,224))
         if self.transform is not None:
             img = self.transform(img)
-        return img, idx  # idx是样本对于类别的标号
+        return img, idx  # idx是样本对应的类别的标号
 
     def __len__(self):
         return len(self.imgs)
@@ -180,5 +180,5 @@ if __name__ == "__main__":
 
             if phase == 'val':
                 best_model_wts = copy.deepcopy(ResNet.state_dict())
-                model_name = "FT_model_"+str(epoch)+".pkl"
+                model_name = "trained_models/"+"FT_model_"+str(epoch)+".pkl"
                 torch.save(best_model_wts, model_name)

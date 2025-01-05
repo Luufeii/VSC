@@ -38,7 +38,7 @@ def NN_search(x, center):
     return ret
 
 
-def get_center(checkpoint_fn):
+def get_center(checkpoint_fn):  # 只有未见类的视觉中心
     center = {}
     file = "Pred_Center.txt"
     center_fn = os.path.join(checkpoint_fn, file)
@@ -143,5 +143,6 @@ if __name__ == "__main__":
         All += correct * 1.0 / sum
 
     # assert test_class_num==len(target_class), "Maybe there is something wrong?"
+    print("在搜索空间只有混合故障的情况下，混合故障的准确率如下：")
     print("The final MCA result is %.5f" % (All / len(target_class)))  # MCA是每个类的准确率相加求均值
     print(f'所有样本的准确率是{total_correct/total_sum}')

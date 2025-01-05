@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="df077c07-5f0d-4361-8114-3fbd765c057d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_to_jpg.py" beforeDir="false" afterPath="$PROJECT_DIR$/trans_to_jpg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cluster/Cluster.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cluster/Cluster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eval_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/Feature_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Feature_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/Finetune.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/Finetune.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/VC_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tools/VC_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train_Model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

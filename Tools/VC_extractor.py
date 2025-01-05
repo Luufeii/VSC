@@ -92,6 +92,6 @@ if __name__ == '__main__':
 
     obj = {"train": target_VC, "test": test_VC}
     cur_url = "../json_file/ResNet18_VC.json"
-    if not os.path.exists(cur_url):
-        os.makedirs(cur_url)
-    json.dump(obj, open(cur_url, "w"))
+    # if not os.path.exists(cur_url):
+        # os.makedirs(cur_url)
+    json.dump(obj, open(cur_url, "w")) # 如果cur_url文件不存在，这里会自动创建文件
